@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Robot';
+  src: url(./component/VeniteAdoremus-rgRBA.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+    overflow-x: hidden;
+    font-family: 'Robot', sans-serif;
+  }
+  .card {
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.content {
+    z-index: 1;
+    color: white;
+}
+
+.card:nth-child(odd) {
+    align-self: flex-end;
+}
+
+.card-text {
+    font-size: 28px;
+    color: #fff;
+    margin: 0; /* Ensure no additional margin is added */
+    font-family: 'Robot', sans-serif;
+}
+.card a {
+  font-family: 'Robot', sans-serif;
+  color: #fff;
+  font-size: 28px;
+  margin: 0;
+  text-decoration: none; /* To remove underline */
+}
+
+a.card {
+  text-decoration: none;
+  display: flex; /* Ensure the a tag also follows flexbox rules */
+  align-items: center;
+  justify-content: center;
+}
+
